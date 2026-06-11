@@ -1,0 +1,80 @@
+@use 'index' as *;
+
+.footer {
+  background: $dark;
+  margin-top: 101px;
+  padding: 42px 0 67px;
+  text-align: center;
+
+  @include tablet {
+    margin-top: 60px;
+  }
+
+  @include mobile {
+    margin-top: 40px;
+    padding: 40px 0 50px;
+  }
+}
+
+.footer-inner {
+  @include container;
+  @include flex-center;
+  flex-direction: column;
+}
+
+// ── Social icons ──────────────────────────────────────
+.footer-social {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.footer-social-link {
+  font-size: 36px;
+  color: $white;
+  text-decoration: none;
+  transition: color 0.2s;
+  line-height: 1;
+
+  i { pointer-events: none; }
+
+  &--orange {
+    color: $orange;
+  }
+
+  &:hover {
+    color: $orange;
+  }
+
+  @include mobile {
+    font-size: 28px;
+  }
+}
+
+// ── Divider line ──────────────────────────────────────
+.footer-line {
+  width: 75px;
+  border: none;
+  border-top: 2px solid $white;
+  margin: 0 auto 28px;
+}
+
+// ── Brand text ────────────────────────────────────────
+.footer-thin {
+  font-family: $font-body;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 4.784px;
+  color: $text;
+}
+
+.footer-bold {
+  font-family: $font-body;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  color: $white;
+}

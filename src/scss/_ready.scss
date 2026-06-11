@@ -1,0 +1,95 @@
+@use 'index' as *;
+
+.ready-section {
+  background: #E5E5E5;
+  padding: 99px 0 88px;
+
+  @include tablet {
+    padding: 60px 0;
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+}
+
+.ready-inner {
+  @include container;
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+// ── Text column ────────────────────────────────────────
+.ready-text {
+  flex: 0 0 936px;
+  max-width: 936px;
+
+  @include tablet {
+    flex: 1;
+    max-width: 100%;
+  }
+}
+
+.ready-heading {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4px;
+  color: $dark;
+  margin-bottom: 50px;
+
+  @include tablet {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+.ready-body {
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  color: $text;
+
+  p + p {
+    margin-top: 16px;
+  }
+}
+
+// ── Vertical separator ─────────────────────────────────
+.ready-separator {
+  flex: 0 0 1px;
+  width: 1px;
+  height: 200px;
+  background: #707070;
+  margin: 146px 42px 0;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+// ── Lamp image column ──────────────────────────────────
+.ready-image {
+  flex: 0 0 271px;
+
+  img {
+    width: 271px;
+    height: 487px;
+    object-fit: contain;
+    display: block;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

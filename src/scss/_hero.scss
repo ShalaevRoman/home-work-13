@@ -1,0 +1,89 @@
+@use 'index' as *;
+@use 'sass:color';
+
+.hero {
+  position: relative;
+  min-height: 1080px;
+  background-image: url('/src/assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // overlay: #2D3651 @ 80% — точно з Figma
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(45, 54, 81, 0.8);
+    z-index: 0;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  // heading: 60px Roboto Slab 300, letter-spacing 8% = 4.8px — точно з Figma
+  &__title {
+    font-family: $font-heading;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 4.8px;
+    color: $white;
+    margin-bottom: 50px;
+
+    @include tablet {
+      font-size: 40px;
+      letter-spacing: 3px;
+      margin-bottom: 36px;
+    }
+
+    @include mobile {
+      font-size: 26px;
+      letter-spacing: 1px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    font-family: $font-body;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid $white;
+    color: $white;
+    transition: background 0.2s, border-color 0.2s;
+
+    &:hover {
+      background: $orange;
+      border-color: $orange;
+    }
+
+    @include mobile {
+      width: 180px;
+      height: 48px;
+      font-size: 16px;
+    }
+  }
+}

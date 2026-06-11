@@ -1,0 +1,83 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+// ── Container ───────────────────────────────────────
+@mixin container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// ── Flex helpers ─────────────────────────────────────
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ── Breakpoints ──────────────────────────────────────
+@mixin tablet {
+  @media (max-width: #{$bp-tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$bp-mobile}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: #{$bp-small}) {
+    @content;
+  }
+}
+
+// ── Section heading ──────────────────────────────────
+@mixin section-heading {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4px;
+  color: $dark;
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 2px;
+  }
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 1px;
+  }
+}
+
+// ── Orange button ────────────────────────────────────
+@mixin btn-orange {
+  display: inline-block;
+  background: $orange;
+  color: $white;
+  border: 2px solid $dark;
+  padding: 18px 48px;
+  font-family: $font-body;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: color.adjust($orange, $lightness: -10%);
+  }
+}

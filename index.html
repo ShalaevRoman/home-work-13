@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Are Real Web-Developers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Roboto+Slab:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <div class="header__inner">
+
+      <a href="#" class="header__logo" aria-label="Go to homepage">
+        <span class="header__logo-box">SITE</span>
+        <span class="header__logo-name">LOGO</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="#" class="header__nav-link header__nav-link--active" aria-current="page">Home</a></li>
+          <li><a href="#" class="header__nav-link">About</a></li>
+          <li><a href="#" class="header__nav-link">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+    </div>
+    <div class="header__overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero__content">
+      <h1 class="hero__title">WE ARE REAL WEB-DEVELOPERS</h1>
+      <div class="hero__buttons">
+        <a href="#" class="hero__btn">Learn more</a>
+        <a href="#" class="hero__btn">Get started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section class="gallery-section" aria-label="Our skills">
+    <div class="gallery-grid">
+      <div class="gallery-item block-html">
+        <div class="gallery-overlay"><span class="gallery-label">HTML</span></div>
+      </div>
+      <div class="gallery-item block-css">
+        <div class="gallery-overlay"><span class="gallery-label">CSS</span></div>
+      </div>
+      <div class="gallery-item block-markup">
+        <div class="gallery-overlay"><span class="gallery-label">Markup</span></div>
+      </div>
+      <div class="gallery-item block-webdesign">
+        <div class="gallery-overlay"><span class="gallery-label">Web-Design</span></div>
+      </div>
+      <div class="gallery-item block-qa">
+        <div class="gallery-overlay"><span class="gallery-label">Quality Assurance</span></div>
+      </div>
+      <div class="gallery-item block-codding">
+        <div class="gallery-overlay"><span class="gallery-label">Codding</span></div>
+      </div>
+      <div class="gallery-item block-adaptability">
+        <div class="gallery-overlay"><span class="gallery-label">Adaptability</span></div>
+      </div>
+      <div class="gallery-item block-php">
+        <div class="gallery-overlay"><span class="gallery-label">PHP</span></div>
+      </div>
+      <div class="gallery-item block-seo">
+        <div class="gallery-overlay"><span class="gallery-label">SEO</span></div>
+      </div>
+    </div>
+    <div class="gallery-footer">
+      <a href="#" class="gallery-btn">View all skills...</a>
+    </div>
+  </section>
+
+  <!-- ── ARE YOU READY ── -->
+  <section class="ready-section">
+    <div class="ready-inner">
+      <div class="ready-text">
+        <h2 class="ready-heading">Are You Ready?<br>Let's start!</h2>
+        <div class="ready-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias voluptates commodi eligendi perspiciatis non ipsam numquam, perferendis fugiat amet molestias provident unde, deleniti quo ducimus placeat voluptas!</p>
+          <p>Quisquam voluptatum quae veritatis quas odio dolores quis voluptas asperiores ex obcaecati reiciendis quidem ducimus et doloribus sed tempore, unde beatae aut consectetur eligendi ratione repellendus nulla pariatur. Explicabo enim officia iure blanditiis eos, velit.</p>
+          <p>Culpa consequatur labore, adipisci asperiores impedit tenetur quam ab dicta recusandae quas nobis reprehenderit necessitatibus placeat corporis enim aliquid sequi saepe. Quos amet, aliquam, reiciendis porro eos voluptates maiores. Voluptas dolor quidem tempora illum laboriosam dolorum neque tenetur.</p>
+          <p>Alias voluptates commodi eligendi perspiciatis non ipsam numquam, perferendis fugiat amet molestias provident unde, deleniti quo ducimus placeat voluptas! Quos amet, aliquam, reiciendis porro eos voluptates maiores.</p>
+        </div>
+      </div>
+      <div class="ready-separator" aria-hidden="true"></div>
+      <div class="ready-image">
+        <img src="/src/assets/images/lamp.png" alt="Lightbulb with web development technology icons">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SUBSCRIBE ── -->
+  <section class="subscribe-section" aria-label="Subscribe to newsletter">
+    <div class="subscribe-inner">
+      <form class="subscribe-form" action="#" novalidate>
+        <div class="form-field form-name">
+          <input type="text" name="name" placeholder="Your name..." autocomplete="name" aria-label="Your name">
+        </div>
+        <div class="form-field form-email">
+          <input type="email" name="email" placeholder="Your email..." autocomplete="email" aria-label="Your email address">
+        </div>
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- ── BLOG POSTS ── -->
+  <section class="posts-section" aria-labelledby="posts-heading">
+    <div class="posts-inner">
+      <h2 class="posts-heading" id="posts-heading">Some section of posts</h2>
+      <div class="posts-grid">
+
+        <article class="post post-1">
+          <img class="post-img" src="/src/assets/images/post-1.jpg" alt="Nostrum quod fugiat odio perspiciatis">
+          <div class="post-caption">
+            <h3 class="post-caption-title">Nostrum quod fugiat odio perspiciatis</h3>
+            <p class="post-caption-body">Minus ad voluptas non, ducimus suscipit temporibus explicabo! Inventore dolorum, debitis eligendi earum in corrupti consectetur quam nesciunt facilis explicabo?</p>
+          </div>
+        </article>
+
+        <article class="post post-2">
+          <img class="post-img" src="/src/assets/images/post-2.jpg" alt="Lorem ipsum dolor amet">
+          <div class="post-caption">
+            <h3 class="post-caption-title">Lorem ipsum dolor amet</h3>
+            <p class="post-caption-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aperiam ipsum obcaecati, quisquam. Reprehenderit corporis neque architecto, id, vero voluptate.</p>
+          </div>
+        </article>
+
+        <article class="post post-3">
+          <img class="post-img" src="/src/assets/images/post-3.jpg" alt="Eum quibusdam voluptas explicabo, commodi">
+          <div class="post-caption">
+            <h3 class="post-caption-title">Eum quibusdam voluptas explicabo, commodi</h3>
+            <p class="post-caption-body">Quo sit explicabo dolore, nihil soluta adipisci deleniti consequatur voluptate cumque, quaerat minima repudiandae consectetur incidunt dolorum.</p>
+          </div>
+        </article>
+
+        <article class="post post-4">
+          <img class="post-img" src="/src/assets/images/post-4.jpg" alt="Voluptate fuga earum">
+          <div class="post-caption">
+            <h3 class="post-caption-title">Voluptate fuga earum</h3>
+            <p class="post-caption-body">Ullam saepe maiores magni, consequatur perferendis earum veniam officiis sapiente a veritatis corporis voluptatum repellendus, autem dolore molestiae suscipit quia!</p>
+          </div>
+        </article>
+
+        <article class="post post-5">
+          <img class="post-img" src="/src/assets/images/post-5.jpg" alt="Facere rerum aliquam nostrum vel">
+          <div class="post-caption">
+            <h3 class="post-caption-title">Facere rerum aliquam nostrum vel</h3>
+            <p class="post-caption-body">Quo sit explicabo dolore, nihil soluta adipisci deleniti consequatur voluptate cumque, quaerat minima repudiandae consectetur incidunt dolorum, culpa, voluptates ab!</p>
+          </div>
+        </article>
+
+        <article class="post post-6">
+          <img class="post-img" src="/src/assets/images/post-6.jpg" alt="Ratione reprehenderit necessitatibus, labore vel">
+          <div class="post-caption">
+            <h3 class="post-caption-title">Ratione reprehenderit necessitatibus, labore vel</h3>
+            <p class="post-caption-body">Ad est voluptate sunt, cupiditate, voluptatem dignissimos corporis unde cumque distinctio, ab odio dolores molestias non cum fugiat enim voluptatibus!</p>
+          </div>
+        </article>
+
+      </div>
+      <div class="posts-footer">
+        <a href="#" class="posts-btn">View all posts...</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="#" class="footer-social-link footer-social-link--orange" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <hr class="footer-line">
+      <div>
+        <p class="footer-thin">WE ARE REAL</p>
+        <p class="footer-bold">WEB-DEVELOPERS</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
