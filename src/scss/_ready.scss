@@ -81,6 +81,7 @@
 // ── Lamp image column ──────────────────────────────────
 .ready-image {
   flex: 0 0 271px;
+  margin-left: auto;
 
   img {
     width: 271px;
@@ -90,6 +91,19 @@
   }
 
   @include tablet {
-    display: none;
+    flex: 0 0 180px;
+    img {
+      width: 180px;
+      height: 320px;
+    }
+  }
+
+  @include mobile {
+    flex: 0 0 120px;
+    margin-left: 15px;
+    img {
+      width: 120px;
+      height: 214px;
+    }
   }
 }
