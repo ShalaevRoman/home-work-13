@@ -2,6 +2,11 @@
 
 Professional portfolio website for web development services. Built with modern web technologies following pixel-perfect design specifications from Figma.
 
+## Links
+
+- **GitHub Pages**: https://shalaevRoman.github.io/home-work-13/
+- **Repository**: https://github.com/ShalaevRoman/home-work-13
+
 ## Project Overview
 
 This is a fully responsive, single-page website showcasing web development services with multiple sections including hero, skills gallery, blog posts, newsletter subscription, and footer.
